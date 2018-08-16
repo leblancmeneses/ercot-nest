@@ -10,6 +10,16 @@
   },
   "hosting": {
     "public": "public",
+    "rewrites": [
+      {
+        "source": "/hooks/ercot",
+        "function": "ercotFetchData"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
     "ignore": [
       "firebase.json",
       "**/.*",
