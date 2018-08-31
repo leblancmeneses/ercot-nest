@@ -35,13 +35,12 @@ export const hook = functions.https.onRequest(async (req, res) => {
       });
     });
 
-    await admin.database().ref('/ercot')
+    await admin.database().ref('/nest/ercot')
       .child(new Date().valueOf().toString())
       .set(data);
+    res.status(200).json(data);
   } catch(ex) {
     console.log(ex);
     res.status(500).send(ex);
-    return;
   }
-  res.status(200).send("");
 });

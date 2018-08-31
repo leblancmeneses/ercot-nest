@@ -16,6 +16,10 @@
         "function": "ercotFetchData"
       },
       {
+        "source": "/hooks/nestGet",
+        "function": "nestGet"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }
