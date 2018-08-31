@@ -21,5 +21,6 @@ firebase functions:config:get
 firebase deploy
 ```
 
-4) /hooks/ercot
-5) /hooks/nestGet
+4) ```/hooks/ercot``` will store data ```/nest/ercot/{timestamp_ms}/{location}/```
+5) ```/hooks/nestGet``` will store data ```/nest/token and /nest/get```
+
